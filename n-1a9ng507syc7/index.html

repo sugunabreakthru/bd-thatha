@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Executive POV | Breakthru AI Solutions</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .accent-border { border-left: 4px solid #3b82f6; }
+        .card-hover:hover { transform: translateY(-4px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 leading-relaxed">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-slate-200 py-4 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" 
+                 alt="Breakthru AI Solutions" class="h-10 md:h-12 object-contain">
+            
+            <div class="flex items-center space-x-4">
+                <span class="text-slate-400 text-sm font-medium hidden md:block">Strategic Partner</span>
+                <div class="h-8 w-px bg-slate-200 hidden md:block"></div>
+                <img src="" 
+                     alt="Your Organization" class="h-10 md:h-12 object-contain opacity-80" onerror="this.style.display='none'">
+                <span id="customer-name-nav" class="font-semibold text-slate-700">Your Organization</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-20 px-6 md:px-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 tracking-tight">
+                Accelerating <span id="customer-name-hero" class="text-blue-400">Your Organization</span>’s Digital Transformation
+            </h1>
+            <p id="hero-subheadline" class="text-xl text-slate-300 font-light max-w-2xl mx-auto">
+                Navigating complex operational landscapes with AI-driven intelligence and enterprise-grade resilience.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-sm uppercase tracking-widest text-blue-600 font-bold mb-2">Contextual Overview</h2>
+                    <h3 class="text-3xl font-bold mb-6">Strategic Landscape</h3>
+                    <div id="about-content" class="space-y-4 text-slate-600">
+                        <!-- Content populated by JS -->
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100">
+                    <h4 class="font-bold text-slate-800 mb-4">Operational Footprint</h4>
+                    <ul id="operational-list" class="space-y-3">
+                        <!-- Content populated by JS -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Challenges Section -->
+    <section class="py-16 px-6 md:px-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Strategic Friction Points</h2>
+                <p class="text-slate-500 mt-2">Critical challenges facing organizations at your scale and complexity.</p>
+            </div>
+            <div id="challenges-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Challenges populated by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Breakthru AI Capability Framework</h2>
+                <p class="text-slate-500 max-w-2xl mx-auto mt-4">Bridging the gap between legacy infrastructure and AI-native operations.</p>
+            </div>
+
+            <div class="space-y-20">
+                <!-- Capability 1 -->
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <div class="bg-blue-50 text-blue-700 px-4 py-1 rounded-full text-xs font-bold uppercase w-fit mb-4">Pillar I</div>
+                        <h3 class="text-2xl font-bold mb-4">Digital Transformation & AI Enablement</h3>
+                        <p class="text-slate-600 mb-6">We transition AI from experimental pilots to core business functions. Our framework ensures governance, scalability, and ethical alignment while driving immediate value in decision-making processes.</p>
+                        <div class="accent-border pl-6 py-2">
+                            <p class="italic text-slate-500">Outcome: Reduced time-to-market for digital initiatives and enhanced executive visibility.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 bg-slate-100 h-64 rounded-2xl flex items-center justify-center p-8">
+                         <div class="text-center">
+                            <div class="text-blue-600 font-bold text-lg mb-2">Cognitive Modernization</div>
+                            <div class="text-slate-400 text-sm">Strategic alignment of AI initiatives with business KPIs.</div>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Capability 2 -->
+                <div class="flex flex-col md:flex-row-reverse gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <div class="bg-emerald-50 text-emerald-700 px-4 py-1 rounded-full text-xs font-bold uppercase w-fit mb-4">Pillar II</div>
+                        <h3 class="text-2xl font-bold mb-4">Data, Cloud & Platform Optimization</h3>
+                        <p class="text-slate-600 mb-6">Addressing the "Data Tax" on innovation. We streamline cloud expenditure and harmonize disparate data silos to create a unified foundation for enterprise intelligence.</p>
+                        <div class="accent-border border-emerald-500 pl-6 py-2">
+                            <p class="italic text-slate-500">Outcome: Immediate reduction in technology waste and improved operational resilience.</p>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 bg-slate-100 h-64 rounded-2xl flex items-center justify-center p-8">
+                        <div class="text-center">
+                           <div class="text-emerald-600 font-bold text-lg mb-2">Platform Efficiency</div>
+                           <div class="text-slate-400 text-sm">Eliminating technical debt through architectural precision.</div>
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personalization Section -->
+    <section class="py-20 px-6 md:px-12 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-8">What This Means for <span id="customer-name-cta">Your Organization</span></h2>
+            <div id="personalized-strategy" class="space-y-6 text-lg text-slate-300">
+                <!-- Content populated by JS -->
+            </div>
+            <div class="mt-12 p-8 bg-white/5 rounded-xl border border-white/10">
+                <p class="text-sm uppercase tracking-widest text-blue-400 font-bold mb-4 text-center">Executive Partnership Focus</p>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-2xl font-bold text-white mb-1">Synergy</div>
+                        <p class="text-slate-400 text-sm">Aligning CTO vision with CFO outcomes.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white mb-1">Scale</div>
+                        <p class="text-slate-400 text-sm">Global operations, local agility.</p>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-bold text-white mb-1">Speed</div>
+                        <p class="text-slate-400 text-sm">From assessment to impact in 90 days.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Summary -->
+    <section class="py-16 px-6 md:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Projected Business Impact</h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-6 border border-slate-100 rounded-xl card-hover">
+                    <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="font-bold mb-2">Enhanced Efficiency</h4>
+                    <p class="text-slate-500 text-sm">Reduction in manual operational overhead through intelligent workflow automation.</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-xl card-hover">
+                    <div class="h-12 w-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="font-bold mb-2">Tech Rationalization</h4>
+                    <p class="text-slate-500 text-sm">Elimination of redundant toolsets and high-cost legacy licensing.</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-xl card-hover">
+                    <div class="h-12 w-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h4 class="font-bold mb-2">Better Governance</h4>
+                    <p class="text-slate-500 text-sm">Unified observability across complex digital and cloud environments.</p>
+                </div>
+                <div class="p-6 border border-slate-100 rounded-xl card-hover">
+                    <div class="h-12 w-12 bg-amber-100 text-amber-600 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="font-bold mb-2">Accelerated Execution</h4>
+                    <p class="text-slate-500 text-sm">Rapid scaling of digital capabilities to meet evolving market demands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 px-6 md:px-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>
+                <img src="https://media.licdn.com/dms/image/v2/D560BAQGK5LZPW7pxKQ/company-logo_200_200/B56ZmuIOdXIYAI-/0/1759563016551/breakthru_ai_solutions_logo?e=1770249600&v=beta&t=lZwBUcVhI2YUcOe5sRLm1KS2fxxhU-MPdj0kN1jdjXo" 
+                     alt="Breakthru AI" class="h-10 mb-4 mx-auto md:mx-0">
+                <p class="text-slate-400 text-sm italic">Prepared exclusively for <span id="customer-name-footer">Your Organization</span></p>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="https://breakthru.ai/" class="text-blue-600 font-semibold hover:underline">Connect with a Strategist</a>
+                <p class="text-slate-400 text-xs mt-2">&copy; 2025 Breakthru AI Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const data = {
+  "companyIdentity": {
+    "name": "",
+    "domain": "",
+    "countryOrRegion": "",
+    "companyType": "",
+    "CompanyLogoURL": "",
+    "confidence": "low"
+  },
+  "businessOverview": {
+    "whatTheyDo": "",
+    "productsOrServices": [],
+    "businessModel": "",
+    "confidence": "low"
+  },
+  "industryFocus": {
+    "primaryIndustry": "",
+    "subIndustry": "",
+    "operationalFocusAreas": [],
+    "confidence": "low"
+  },
+  "targetAudience": {
+    "customerType": "",
+    "industriesServed": [],
+    "customerSize": "",
+    "confidence": "low"
+  },
+  "technologyAndOperations": {
+    "mentionedTechnologies": [],
+    "digitalMaturity": "",
+    "operationalComplexityIndicators": [],
+    "confidence": "low"
+  },
+  "costOptimizationSignals": {
+    "likelyHighCostAreas": [],
+    "impliedBusinessChallenges": [],
+    "confidence": "low"
+  },
+  "brandAndMessaging": {
+    "brandTone": "",
+    "websiteKeywords": [],
+    "confidence": "low"
+  },
+  "dataLineage": {
+    "agentCount": 0,
+    "fieldsConfirmedByMultipleAgents": [],
+    "fieldsWithConflicts": [],
+    "fieldsPrimarilyInferred": []
+  }
+};
+
+        $(document).ready(function() {
+            const companyName = data.companyIdentity.name || "Enterprise Leader";
+            const industry = data.industryFocus.primaryIndustry || "Global Enterprise";
+            
+            // Populate Name Placeholders
+            $('#customer-name-nav').text(companyName);
+            $('#customer-name-hero').text(companyName);
+            $('#customer-name-cta').text(companyName);
+            $('#customer-name-footer').text(companyName);
+
+            // Hero Subheadline
+            if(data.industryFocus.primaryIndustry) {
+                $('#hero-subheadline').text(`Transforming ${industry} operations through high-impact AI orchestration and strategic digital modernization.`);
+            }
+
+            // About Content
+            const aboutContent = data.businessOverview.whatTheyDo 
+                ? `<p>${data.businessOverview.whatTheyDo}</p>` 
+                : `<p>As a leading entity in your industry, your organization operates at a scale where digital agility is no longer optional—it is a competitive necessity. Navigating current market shifts requires a data-first approach to ensure sustainable growth.</p>`;
+            $('#about-content').html(aboutContent);
+
+            // Operational List
+            let opsHtml = '';
+            const opsItems = data.industryFocus.operationalFocusAreas.length > 0 
+                ? data.industryFocus.operationalFocusAreas 
+                : ["Global Infrastructure Management", "Cross-Functional Integration", "Data Governance & Compliance", "Supply Chain & Service Optimization"];
+            
+            opsItems.forEach(item => {
+                opsHtml += `<li class="flex items-start">
+                    <span class="text-blue-500 mr-2">●</span>
+                    <span class="text-slate-600 text-sm">${item}</span>
+                </li>`;
+            });
+            $('#operational-list').html(opsHtml);
+
+            // Challenges
+            let challengesHtml = '';
+            const challenges = data.costOptimizationSignals.impliedBusinessChallenges.length > 0 
+                ? data.costOptimizationSignals.impliedBusinessChallenges 
+                : [
+                    "Siloed legacy data preventing real-time executive decision-making.",
+                    "Increasing operational expenditure within cloud and infrastructure layers.",
+                    "Complexity in scaling AI initiatives across diverse business units.",
+                    "Evolving regulatory landscapes requiring automated compliance protocols.",
+                    "Interoperability challenges between modern digital stacks and core systems."
+                ];
+
+            challenges.forEach(c => {
+                challengesHtml += `
+                    <div class="bg-white p-6 rounded-xl border-l-4 border-red-400 shadow-sm">
+                        <p class="text-slate-700 font-medium">${c}</p>
+                    </div>
+                `;
+            });
+            $('#challenges-grid').html(challengesHtml);
+
+            // Personalized Strategy
+            const strategyText = `Given your position as a ${data.companyType || 'prominent industry participant'}, Breakthru AI Solutions proposes a phased approach focused on **${data.industryFocus.primaryIndustry || 'Digital Agility'}**. By targeting ${data.costOptimizationSignals.likelyHighCostAreas.join(', ') || 'inefficiencies in legacy operations'}, we can pivot your technology investment from a cost center to a growth engine. Our engagement model is built for the complexity of ${data.targetAudience.customerSize || 'global enterprise'} scale, ensuring zero disruption to existing critical workflows.`;
+            $('#personalized-strategy').html(`<p>${strategyText}</p>`);
+        });
+    </script>
+</body>
+</html><script>
+/**
+ * Breakthru AI Solutions - Executive Showcase Script
+ * Custom logic to handle dynamic data rendering for Personalized POV
+ */
+</script></html>
